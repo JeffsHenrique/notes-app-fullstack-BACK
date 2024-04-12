@@ -73,6 +73,6 @@ app.delete('/api/notes/:id', async (req, res) => {
 
 
 
-app.listen(5000, () => {
+app.listen( process.env.PORT ? Number(process.env.PORT) : 5000, () => {
     console.log('server running on localhost:5000')
 })
