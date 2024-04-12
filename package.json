@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e ts,json, src/index.ts"
+    "dev": "node dist/index.js",
+    "build": "tsup src"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "@prisma/client": "^5.12.1",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "prisma": "^5.12.1"
+    "prisma": "^5.12.1",
+    "tsup": "^8.0.2"
   }
 }
